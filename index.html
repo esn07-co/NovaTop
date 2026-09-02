@@ -8,13 +8,1539 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./src/style.css" />
+    <style>
+:root{--bg:#090b12;--surface:#10141d;--surface2:#151a25;--line:#293144;--muted:#94a0b8;--text:#f6f8ff;--purple:#7659ff;--purple2:#a487ff;--green:#54e3a6}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:15px 'DM Sans',sans-serif}button,input,textarea{font:inherit}a{color:inherit;text-decoration:none}.nav{height:76px;display:flex;align-items:center;gap:42px;padding:0 max(28px,calc((100vw - 1240px)/2));border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;background:rgba(9,11,18,.9);backdrop-filter:blur(18px)}.brand{display:flex;align-items:center;gap:8px;font:800 18px Outfit,sans-serif;letter-spacing:-.7px}.brand span span{color:#7be8ff}.brand-mark{width:32px;height:32px;display:grid;place-items:center;background:linear-gradient(135deg,#65e6ff,#705aff 55%,#d164ff);clip-path:polygon(15% 0,100% 0,85% 100%,0 100%);font-style:italic}.nav nav{display:flex;gap:27px;color:var(--muted);font-weight:500}.nav nav a:hover,.text-link{color:white}.nav-actions{margin-left:auto;display:flex;align-items:center;gap:18px}.wallet,.signin{border:0;background:none;color:var(--muted);cursor:pointer}.wallet{border:1px solid var(--line);border-radius:9px;color:#fff;padding:8px 12px;font-weight:700}.mobile-menu{display:none}.hero{max-width:1240px;margin:0 auto;padding:76px 28px 80px;min-height:515px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:52px}.eyebrow{font:700 11px Outfit,sans-serif;letter-spacing:1.4px;color:#a88cff;margin:0 0 12px}.hero h1,h1,h2{font-family:Outfit,sans-serif;letter-spacing:-1.5px;margin:0}.hero h1{font-size:clamp(46px,5vw,70px);line-height:.96;max-width:570px}.hero h1 em{font-style:normal;background:linear-gradient(100deg,#a287ff,#74ddff);-webkit-background-clip:text;color:transparent}.hero-text{color:var(--muted);font-size:17px;line-height:1.65;max-width:490px;margin:24px 0}.hero-cta{display:flex;gap:12px}.btn{border:0;border-radius:10px;padding:13px 18px;display:inline-flex;justify-content:center;align-items:center;gap:11px;font-weight:700;cursor:pointer;transition:.2s}.primary{background:linear-gradient(110deg,var(--purple),#9776ff);color:#fff;box-shadow:0 10px 28px rgba(118,89,255,.22)}.primary:hover{transform:translateY(-2px);filter:brightness(1.08)}.ghost{border:1px solid var(--line);color:#dce1ee}.trust-row{display:flex;gap:20px;color:#b9c4d8;font-size:13px;margin-top:28px}.trust-row span:first-child{color:#71eab5}.hero-art{position:relative;height:370px;display:grid;place-items:center}.hero-card{width:330px;height:350px;position:relative;overflow:hidden;border:1px solid #6756dc;border-radius:22px;background:radial-gradient(circle at 70% 22%,#814cf9 0,#262278 32%,#101536 68%,#10111c);transform:rotate(4deg);box-shadow:0 28px 65px #0008}.hero-card:after{content:'';position:absolute;inset:0;background:linear-gradient(130deg,transparent 52%,#6d62ff44 53%,transparent 54%);pointer-events:none}.hero-card-top{position:absolute;top:19px;left:22px;font:700 10px Outfit;letter-spacing:1.4px}.hero-character{font:220px Outfit;position:absolute;right:8px;top:38px;color:#d5d3ff;text-shadow:0 0 30px #ae7aff}.hero-card-title{position:absolute;left:23px;bottom:59px;font:600 43px Outfit;line-height:.8;z-index:1}.hero-card-title strong{font-size:77px;color:#74e5ff}.hero-lines{position:absolute;bottom:29px;left:23px;width:110px;height:4px;background:#a78fff;box-shadow:0 10px #a78fff88,0 20px #a78fff55}.hero-chip{position:absolute;right:17px;bottom:19px;border:1px solid #9a8cff;background:#111633aa;border-radius:5px;padding:5px 8px;font:700 8px Outfit;letter-spacing:1px}.orb{position:absolute;border-radius:999px;filter:blur(1px)}.orb-one{width:210px;height:210px;background:#6546fe55;top:-4px;right:15px}.orb-two{width:135px;height:135px;background:#56dfff33;bottom:4px;left:18px}.float-pill{position:absolute;z-index:2;padding:10px 13px;border:1px solid #59627a;background:#121726e8;border-radius:9px;font-size:12px;font-weight:700}.p-one{top:28px;left:0;color:#71eab5}.p-two{bottom:32px;right:0;color:#d9d5ff}.quick-search{max-width:1184px;margin:0 auto;padding:0 28px;display:flex;align-items:center}.quick-search span{color:var(--muted);font-size:24px;margin-right:-35px;z-index:1}.quick-search input,input,textarea{background:var(--surface);border:1px solid var(--line);color:#fff;border-radius:10px;outline:none}.quick-search input{width:100%;padding:15px 18px 15px 47px}.quick-search input:focus,input:focus,textarea:focus{border-color:#846cfa;box-shadow:0 0 0 3px #7659ff1e}.section{max-width:1240px;margin:0 auto;padding:86px 28px}.section-heading{display:flex;align-items:end;justify-content:space-between;margin-bottom:28px}.section h2{font-size:32px}.text-link{color:#aa92ff;font-weight:700}.game-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.game-card{display:flex;align-items:center;gap:14px;min-width:0;padding:12px;background:var(--surface);border:1px solid var(--line);border-radius:14px;transition:.2s}.game-card:hover{border-color:#846cfa;transform:translateY(-3px);background:#151b29}.game-art{height:74px;width:74px;border-radius:11px;flex:none;overflow:hidden;display:grid;place-items:center;position:relative;background:linear-gradient(135deg,#4936a7,#141132)}.game-art span{font:42px Outfit;color:#fff;text-shadow:0 2px 12px #0009;z-index:1}.game-art small{position:absolute;bottom:5px;left:7px;font:800 10px Outfit;letter-spacing:1px}.orange{background:linear-gradient(135deg,#ff9f28,#50210d)}.red{background:linear-gradient(135deg,#ff3e52,#47101d)}.blue{background:linear-gradient(135deg,#50a7ff,#19316e)}.pink{background:linear-gradient(135deg,#ee5a9e,#451b43)}.gold{background:linear-gradient(135deg,#ffc84d,#58400f)}.game-info{min-width:0}.game-info h3{font:600 16px Outfit;margin:0 0 3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.game-info p{margin:0;color:var(--muted);font-size:12px}.card-arrow{margin-left:auto;color:#a88cff;font-size:20px}.how{padding-top:10px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.steps article{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px}.steps b{position:absolute;right:20px;top:19px;color:#343d52;font:700 30px Outfit}.step-icon{font:30px Outfit;color:#a789ff}.steps h3{font:600 18px Outfit;margin:26px 0 7px}.steps p{color:var(--muted);margin:0;line-height:1.55}.banner{max-width:1184px;margin:6px auto 90px;padding:37px 42px;border:1px solid #6754d7;border-radius:18px;background:linear-gradient(100deg,#241c58,#181936 58%,#202d58);display:flex;justify-content:space-between;align-items:center}.banner h2{font-size:29px}footer{border-top:1px solid var(--line);background:#0d1018;padding:52px max(28px,calc((100vw - 1184px)/2)) 22px}.footer-grid{display:grid;grid-template-columns:2fr repeat(3,1fr);gap:42px}.footer-grid p{color:var(--muted);font-size:13px;line-height:1.7;max-width:290px}.footer-grid h4{font:700 12px Outfit;letter-spacing:.8px;margin:4px 0 16px}.footer-grid>div:not(:first-child){display:flex;flex-direction:column;align-items:flex-start;gap:10px}.footer-grid a:not(.brand){font-size:13px;color:var(--muted)}.footer-badges{display:flex;gap:5px}.footer-badges span{font-size:10px;background:#20293a;border-radius:5px;padding:5px}.copyright{border-top:1px solid var(--line);padding-top:22px;margin-top:43px;text-align:center;color:#69758d;font-size:12px}.topup-page{max-width:1120px;margin:auto;padding:32px 28px 90px}.crumb{color:var(--muted);font-size:13px;display:flex;gap:9px}.crumb a:hover{color:white}.product-head{display:flex;align-items:center;gap:18px;margin:28px 0}.game-art.large{width:92px;height:92px;border-radius:16px}.game-art.large span{font-size:55px}.product-head h1,.center-page h1{font-size:36px}.product-head p:not(.eyebrow),.track-card>p,.help-page>section>p{color:var(--muted);margin:7px 0 0}.assurances{background:#121127;border:1px solid #252347;border-radius:12px;padding:15px;display:flex;justify-content:center;gap:45px;font-size:13px;font-weight:700}.assurances span{color:#b9a9ff}.checkout{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:38px}.form-step{display:flex;gap:13px;align-items:flex-start;margin-bottom:21px}.form-step>span{width:27px;height:27px;border-radius:50%;background:#7659ff;display:grid;place-items:center;font:700 13px Outfit}.form-step h2{font-size:21px;letter-spacing:-.5px}.form-step p{margin:4px 0;color:var(--muted);font-size:13px}.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}label{color:#acb6cb;font-size:13px;display:flex;flex-direction:column;gap:7px}input,textarea{padding:13px;width:100%}textarea{height:110px;resize:vertical}.verify{background:none;border:0;color:#ad94ff;padding:12px 0;font-weight:700;cursor:pointer}.verified{color:#6ce7b1;font-size:13px;margin:0 0 28px}.pack-heading{margin-top:16px}.pack-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}.pack{min-height:87px;position:relative;border:1px solid var(--line);background:var(--surface);color:white;border-radius:10px;text-align:left;padding:16px 12px 11px;cursor:pointer;transition:.2s}.pack:hover,.pack.selected{border-color:#896fff;background:#1b1932}.pack b{display:block;font:600 15px Outfit}.pack strong{color:#beaaff;font-size:14px;display:block;margin-top:9px}.pack i{position:absolute;right:6px;top:-8px;background:#7659ff;border-radius:4px;font:700 8px Outfit;padding:3px 5px;font-style:normal}.order-card{height:max-content;padding:22px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}.summary-game{display:flex;gap:10px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}.summary-game b{font:600 14px Outfit;display:block}.summary-game span{font-size:12px;color:var(--muted);display:block;margin-top:3px}.tiny-art{width:40px;height:40px;display:grid;place-items:center;border-radius:8px;font:22px Outfit}.summary-line{padding:14px 0 0;display:flex;justify-content:space-between;color:var(--muted);font-size:13px}.summary-line strong{color:white}.summary-line.total{padding:17px 0;border-bottom:1px solid var(--line);font-size:15px}.summary-line.total strong{color:#bba7ff;font-size:18px}.full{width:100%;margin-top:18px}.btn:disabled{background:#2f2a57;box-shadow:none;color:#9691ae;cursor:not-allowed;transform:none}.summary-note{text-align:center;color:#76829a;font-size:11px;margin:14px 0 0}.center-page{min-height:calc(100vh - 76px);padding:70px 28px 90px}.track-card,.wallet-card{width:min(100%,550px);margin:auto;padding:31px;border:1px solid var(--line);border-radius:16px;background:var(--surface)}.track-card h1,.wallet-card h1{margin-bottom:10px}.track-card label,.wallet-card label{margin-top:28px}.tracking{display:flex;gap:12px;margin-top:20px;padding:15px;border-radius:10px;background:#11221c;border:1px solid #25654c;color:#80e8b5}.tracking span{font-size:21px}.tracking p{margin:4px 0 0;font-size:12px}.error{color:#ff8499;margin:15px 0 0}.help-page>section{width:min(100%,700px);margin:auto}.help-page h1{margin-bottom:29px}.faq{border:1px solid var(--line);border-radius:12px;overflow:hidden}.faq details{background:var(--surface);border-bottom:1px solid var(--line)}.faq details:last-child{border:0}.faq summary{padding:18px;cursor:pointer;list-style:none;font:600 16px Outfit;display:flex;justify-content:space-between}.faq summary span{color:#a88cff}.faq details p{padding:0 18px 18px;color:var(--muted);margin:0;line-height:1.6}.contact-form{margin-top:47px}.contact-form h2{font-size:24px;margin-bottom:19px}.contact-form>label{margin-top:13px}.contact-form p{color:#6de3ac}.wallet-card h1{font-size:48px}.amounts{display:flex;gap:9px;flex-wrap:wrap;margin:28px 0}.amounts button{color:#ddd6ff;border:1px solid #625a85;background:#1b1930;border-radius:8px;padding:9px 12px;cursor:pointer;font-weight:700}.notice{background:#16211f;border:1px solid #315649;border-radius:9px;padding:12px;margin-top:22px;color:#9ed7bf;font-size:12px;line-height:1.5}
+@media(max-width:760px){.nav{height:65px;padding:0 18px;gap:0}.nav nav{display:none;position:absolute;left:0;right:0;top:64px;padding:18px;background:#10141d;border-bottom:1px solid var(--line);flex-direction:column}.nav nav.open{display:flex}.signin{display:none}.mobile-menu{display:block;background:none;border:0;color:#fff;font-size:22px}.hero{padding:52px 21px 58px;display:flex;flex-direction:column;gap:23px;align-items:stretch}.hero h1{font-size:48px}.hero-art{height:300px;transform:scale(.9);margin:-12px}.quick-search,.section{padding-left:21px;padding-right:21px}.section{padding-top:58px;padding-bottom:58px}.section-heading{align-items:flex-start}.section h2{font-size:27px}.text-link{display:none}.game-grid{grid-template-columns:1fr 1fr;gap:10px}.game-card{padding:9px;gap:9px}.game-art{width:56px;height:62px}.game-art span{font-size:31px}.game-info h3{font-size:13px}.card-arrow{display:none}.steps{grid-template-columns:1fr}.banner{margin:0 21px 60px;padding:28px;gap:22px;align-items:flex-start;flex-direction:column}.footer-grid{grid-template-columns:1fr 1fr;gap:28px}.footer-grid>div:first-child{grid-column:1/-1}.topup-page{padding:24px 18px 60px}.product-head h1,.center-page h1{font-size:30px}.assurances{justify-content:flex-start;gap:10px;flex-direction:column;padding-left:18px}.checkout{grid-template-columns:1fr;margin-top:26px}.order-card{grid-row:2}.form-grid{grid-template-columns:1fr}.pack-grid{grid-template-columns:repeat(2,1fr)}.center-page{padding:50px 18px 60px}.track-card,.wallet-card{padding:24px}.hero-cta{flex-wrap:wrap}.trust-row{gap:12px;flex-wrap:wrap}.nav-actions{gap:9px}.wallet{padding:7px 9px}.footer-grid{font-size:13px}}
+.game-art img{height:100%;width:100%;object-fit:cover;position:absolute;inset:0}.game-art:has(img)::after{content:'';position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.65))}.game-art small{z-index:2;text-shadow:0 1px 3px #000}
+
+/* Focused two-game experience */
+.hero-v2{padding-top:66px;padding-bottom:60px;min-height:490px}.hero-v2 .hero-copy{position:relative;z-index:1}.hero-v2 .hero-kicker{display:inline-flex;align-items:center;gap:9px;background:#14182a;border:1px solid #2d3650;border-radius:99px;padding:8px 12px;color:#bfb5ff;font:700 10px Outfit;letter-spacing:1.15px}.live-dot{width:7px;height:7px;background:#62e8a7;border-radius:50%;box-shadow:0 0 0 4px #62e8a71e}.hero-v2 h1{margin-top:19px}.hero-v2 .trust-row{gap:17px}.hero-v2 .trust-row span{display:flex;align-items:center;gap:6px}.hero-games{height:370px;position:relative;display:grid;grid-template-columns:1.05fr .85fr;gap:15px;align-items:end;padding:22px}.hero-games:before{content:'';position:absolute;inset:20px 0 0;background:radial-gradient(circle at 68% 18%,#785dff55,transparent 42%),radial-gradient(circle at 13% 92%,#35c3ff32,transparent 43%);filter:blur(8px)}.hero-game{position:relative;isolation:isolate;overflow:hidden;height:295px;border:1px solid #4d4b86;border-radius:20px;background:#13152d;box-shadow:0 20px 45px #0006;transition:transform .25s,border-color .25s}.hero-game:hover{transform:translateY(-7px);border-color:#9a82ff}.hero-game.bg{height:250px;margin-bottom:10px;border-color:#565570}.hero-game:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#080914 0%,#080914cc 23%,transparent 70%),linear-gradient(90deg,#08091466,transparent);z-index:-1}.hero-game img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .45s}.hero-game:hover img{transform:scale(1.06)}.hero-game>div{position:absolute;left:18px;bottom:17px;display:grid;gap:4px}.hero-game small{font:700 9px Outfit;letter-spacing:1px;color:#b9a6ff}.hero-game b{font:600 22px Outfit}.hero-game span{color:#fff;font-weight:700;font-size:12px;margin-top:6px}.assured-badge{position:absolute;z-index:2;right:-7px;top:14px;display:flex;align-items:center;gap:8px;border:1px solid #6155c6;border-radius:12px;background:#191636e8;padding:10px 12px;box-shadow:0 10px 25px #0007}.assured-badge strong{font:800 22px Outfit;color:#b7a5ff}.assured-badge span{font-size:10px;line-height:1.25;color:#d6d8ec}.benefit-bar{max-width:1184px;margin:0 auto;padding:16px 28px;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:14px;background:linear-gradient(100deg,#111522,#15162c)}.benefit-bar>span{display:grid;grid-template-columns:34px 1fr;column-gap:10px;align-items:center;padding:4px 24px;border-right:1px solid var(--line)}.benefit-bar>span:last-child{border:0}.benefit-bar i{grid-row:span 2;width:31px;height:31px;display:grid;place-items:center;border-radius:9px;background:#7659ff22;color:#b59dff;font-style:normal;font-size:18px}.benefit-bar b{font:600 13px Outfit}.benefit-bar small{font-size:11px;color:var(--muted);margin-top:2px}.game-section{padding-top:78px}.section-sub{color:var(--muted);margin:8px 0 0}.game-section .game-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.game-section .game-card{padding:14px;border-radius:17px;min-height:126px;gap:17px;position:relative;overflow:hidden}.game-section .game-card:before{content:'';position:absolute;inset:0;background:linear-gradient(100deg,transparent 40%,#745bff0e);pointer-events:none}.game-section .game-art{height:96px;width:86px;border-radius:11px}.game-section .game-info h3{font-size:20px}.game-section .game-info p{font-size:13px;margin-top:7px}.game-section .card-arrow{width:32px;height:32px;display:grid;place-items:center;border-radius:50%;background:#25203f;color:#c4b2ff;margin-right:5px}.game-section .game-card:hover .card-arrow{background:#7659ff;color:#fff}.steps article{background:linear-gradient(140deg,#10141d,#151522)}.steps article:hover{border-color:#554b86}.topup-page .product-head{padding:20px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(100deg,#111522,#15152a)}.topup-page .game-art.large{box-shadow:0 8px 20px #0008}.checkout-main{padding:3px}.order-card{position:sticky;top:96px}.pack{min-height:94px}.pack:focus-visible,.game-card:focus-visible,.hero-game:focus-visible{outline:3px solid #ae98ff;outline-offset:3px}.form-step>span{box-shadow:0 0 0 5px #7659ff18}.banner{background:linear-gradient(100deg,#211b50,#222254 58%,#173a5e);box-shadow:0 12px 35px #0004}
+@media(max-width:760px){.hero-v2{padding-top:44px}.hero-v2 .hero-kicker{font-size:9px}.hero-games{height:310px;padding:14px 0;gap:10px}.hero-game{height:245px;border-radius:15px}.hero-game.bg{height:208px}.hero-game>div{left:12px;bottom:12px}.hero-game b{font-size:16px}.hero-game small{font-size:7px}.hero-game span{font-size:10px}.assured-badge{right:-4px;top:2px;padding:7px 9px}.assured-badge strong{font-size:16px}.benefit-bar{margin:0 21px;padding:9px 0;grid-template-columns:1fr;border-radius:12px}.benefit-bar>span{padding:9px 15px;border-right:0;border-bottom:1px solid var(--line)}.benefit-bar>span:last-child{border-bottom:0}.game-section .game-grid{grid-template-columns:1fr}.game-section .game-card{min-height:110px}.game-section .game-art{height:82px;width:78px}.game-section .game-info h3{font-size:18px}.order-card{position:static}.topup-page .product-head{padding:14px}.section-sub{font-size:13px}.hero-v2 .trust-row span:last-child{display:none}}
+
+/* ==========================================================================
+   AUTHENTICATION & USER PROFILE STYLES
+   ========================================================================== */
+
+/* Navigation Sign In & User Profile */
+.signin-btn {
+  background: linear-gradient(110deg, #6366f1, #818cf8);
+  color: #ffffff;
+  border: 0;
+  border-radius: 9px;
+  padding: 8px 18px;
+  font: 700 14px 'DM Sans', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.28);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.signin-btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.1);
+}
+
+.user-profile-menu-wrap {
+  position: relative;
+}
+
+.user-avatar-btn {
+  background: #151a26;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  padding: 4px 12px 4px 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.user-avatar-btn:hover {
+  border-color: #7659ff;
+  background: #1c2233;
+}
+
+.user-avatar-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  display: grid;
+  place-items: center;
+  font: 700 12px Outfit, sans-serif;
+  color: #fff;
+}
+
+.user-avatar-circle.large {
+  width: 44px;
+  height: 44px;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.user-name-label {
+  font-weight: 600;
+  font-size: 13px;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.user-dropdown-arrow {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.user-dropdown-popover {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 260px;
+  background: #111522;
+  border: 1px solid #2d3650;
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  animation: dropdownFadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.dropdown-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 4px 10px;
+}
+
+.dropdown-user-details {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.dropdown-user-details strong {
+  font-size: 14px;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown-user-details small {
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.provider-badge {
+  display: inline-block;
+  font-size: 10px;
+  color: #62e8a7;
+  margin-top: 3px;
+  font-weight: 600;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background: #242c40;
+  margin: 8px 0;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 10px;
+  border-radius: 8px;
+  color: #d1d7e5;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  background: transparent;
+  border: 0;
+  width: 100%;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.dropdown-item:hover {
+  background: #1b2135;
+  color: #fff;
+}
+
+.dropdown-wallet-bal {
+  margin-left: auto;
+  color: #79ddff;
+}
+
+.dropdown-item.logout-btn {
+  color: #ff758f;
+}
+
+.dropdown-item.logout-btn:hover {
+  background: #2f1822;
+  color: #ff94a8;
+}
+
+.item-icon {
+  font-size: 15px;
+}
+
+/* Modal Backdrop & Container */
+.auth-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 7, 12, 0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  animation: modalBackdropFadeIn 0.25s ease;
+}
+
+@keyframes modalBackdropFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.auth-modal-dialog-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.auth-card {
+  width: min(100%, 430px);
+  background: #0f121d;
+  border: 1px solid #283147;
+  border-radius: 18px;
+  padding: 34px 30px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.75);
+  position: relative;
+  animation: cardSlideUp 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes cardSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.auth-close-btn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: transparent;
+  border: 0;
+  color: var(--muted);
+  font-size: 16px;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.auth-close-btn:hover {
+  color: #fff;
+  background: #1c2336;
+}
+
+.auth-header-block {
+  margin-bottom: 24px;
+}
+
+.auth-title {
+  font: 700 27px Outfit, sans-serif;
+  letter-spacing: -0.8px;
+  color: #ffffff;
+  margin: 0 0 6px 0;
+}
+
+.auth-subtitle {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.auth-social-area {
+  margin-bottom: 18px;
+}
+
+.google-auth-btn {
+  width: 100%;
+  background: #161b28;
+  border: 1px solid #2d3752;
+  border-radius: 10px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #ffffff;
+  font: 600 14px 'DM Sans', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.google-auth-btn:hover {
+  background: #1e2436;
+  border-color: #4b5880;
+}
+
+.auth-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 18px 0;
+  color: #636f8a;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #232a3d;
+}
+
+.auth-divider span {
+  padding: 0 12px;
+}
+
+.auth-form-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.auth-label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #b7c1d6;
+}
+
+.auth-label.full-width {
+  width: 100%;
+}
+
+.auth-label-row-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auth-input {
+  background: #141824;
+  border: 1px solid #28324a;
+  border-radius: 10px;
+  padding: 13px 15px;
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.auth-input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.forgot-link-btn,
+.text-link-btn {
+  background: none;
+  border: 0;
+  color: #818cf8;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.15s ease;
+}
+
+.forgot-link-btn:hover,
+.text-link-btn:hover {
+  color: #a5b4fc;
+  text-decoration: underline;
+}
+
+.auth-footer-toggle {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--muted);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Forgot Password Card Specifics (Matching Reference Screenshot 3) */
+.forgot-card {
+  max-width: 460px;
+  padding: 38px 34px;
+}
+
+.forgot-card .auth-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.forgot-card .auth-subtitle {
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 1.55;
+  margin-bottom: 24px;
+}
+
+.forgot-submit-btn {
+  background: linear-gradient(110deg, #4f46e5, #6366f1);
+  padding: 14px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0 8px 22px rgba(79, 70, 229, 0.3);
+  margin-top: 8px;
+}
+
+.auth-footer-links {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.auth-success-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(99, 232, 167, 0.12);
+  border: 1px solid #2d7350;
+  color: #62e8a7;
+  font-size: 24px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 16px;
+}
+
+.highlight-email {
+  color: #93c5fd;
+}
+
+.auth-success-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.resend-link-btn {
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.auth-error-banner {
+  background: #33151b;
+  border: 1px solid #6b2634;
+  color: #ff94a8;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+/* Google Account Chooser Dialog (Matching Reference Screenshot 2) */
+.google-dialog-card {
+  width: min(100%, 420px);
+  background: #131314;
+  border: 1px solid #333538;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 25px 65px rgba(0, 0, 0, 0.85);
+  animation: cardSlideUp 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.google-dialog-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 22px 24px 14px;
+  font: 500 15px 'DM Sans', sans-serif;
+  color: #e3e3e3;
+}
+
+.google-dialog-body {
+  padding: 8px 24px 24px;
+}
+
+.google-dialog-body h2 {
+  font: 400 24px 'DM Sans', sans-serif;
+  letter-spacing: -0.3px;
+  color: #ffffff;
+  margin: 0 0 6px 0;
+}
+
+.google-dialog-sub {
+  color: #9aa0a6;
+  font-size: 14px;
+  margin: 0 0 22px 0;
+}
+
+.google-dialog-sub strong {
+  color: #e8eaed;
+}
+
+.google-accounts-list {
+  border-top: 1px solid #2d2f31;
+  border-bottom: 1px solid #2d2f31;
+  margin: 0 -24px 18px;
+}
+
+.google-account-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 24px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s ease;
+}
+
+.google-account-row:hover {
+  background: #1f2022;
+}
+
+.google-account-row.another-account-row {
+  border-top: 1px solid #242628;
+}
+
+.google-user-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #3c4043;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.google-user-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.google-user-avatar.default-icon {
+  color: #9aa0a6;
+  background: #232527;
+}
+
+.google-account-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.google-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: #e3e3e3;
+}
+
+.google-email {
+  font-size: 12px;
+  color: #9aa0a6;
+}
+
+.custom-google-input-area {
+  padding-top: 10px;
+}
+
+.google-dialog-footer {
+  background: #0e0e10;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #9aa0a6;
+  border-top: 1px solid #232527;
+}
+
+.google-lang-select {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.google-footer-links {
+  display: flex;
+  gap: 14px;
+}
+
+.google-footer-links a {
+  color: #9aa0a6;
+  text-decoration: none;
+}
+
+.google-footer-links a:hover {
+  color: #e3e3e3;
+}
+
+/* Toast Notifications */
+.toast-container {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 2000;
+  pointer-events: none;
+}
+
+.toast-pill {
+  background: #141926;
+  border: 1px solid #2d3852;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 99px;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  opacity: 0;
+  transform: translateY(12px) scale(0.95);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.toast-pill.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.toast-pill.success {
+  border-color: #276749;
+  background: #0f1e19;
+  color: #84f1be;
+}
+
+.toast-pill.error {
+  border-color: #6b2634;
+  background: #241117;
+  color: #ff94a8;
+}
+
+.toast-icon {
+  font-weight: 800;
+}
+
+/* Footer Additions matching NovaTop design */
+.footer-bottom-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  padding-top: 22px;
+  margin-top: 40px;
+}
+
+.footer-bottom-bar .copyright {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+  text-align: left;
+}
+
+.live-chat-floating-btn {
+  background: #6366f1;
+  color: #ffffff;
+  border: 0;
+  border-radius: 9px;
+  padding: 10px 18px;
+  font: 700 13px 'DM Sans', sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.live-chat-floating-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.tiny-game-badge {
+  font-size: 13px;
+  margin-right: 4px;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 13px;
+  margin: 0 0 6px 0;
+}
+
+.social-links-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.social-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #1a202f;
+  border: 1px solid var(--line);
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.social-circle:hover {
+  background: #2a344d;
+  color: #fff;
+  border-color: #7659ff;
+}
+
+
+    </style>
   </head>
   <body>
     <div id="app"></div>
-    <script src="./src/main.js"></script>
+    <script>
+// Auth State & Persistence
+const AUTH_STORAGE_KEY = 'novatop_auth_session';
+
+function getStoredUser() {
+  try {
+    const data = localStorage.getItem(AUTH_STORAGE_KEY);
+    return data ? JSON.parse(data) : null;
+  } catch (e) {
+    return null;
+  }
+}
+
+function setStoredUser(user) {
+  try {
+    if (user) {
+      localStorage.setItem(AUTH_STORAGE_KEY, JSON.stringify(user));
+    } else {
+      localStorage.removeItem(AUTH_STORAGE_KEY);
+    }
+  } catch (e) {
+    console.error('Storage error', e);
+  }
+}
+
+let currentUser = getStoredUser();
+let authModalState = {
+  isOpen: false,
+  view: 'signin', // 'signin' | 'signup' | 'forgot' | 'google_chooser' | 'forgot_success'
+  emailInput: '',
+  error: '',
+  isSubmitting: false
+};
+
+let userMenuOpen = false;
+
+const games = [
+  { id: 'mlbb', name: 'Mobile Legends', short: 'ML', type: 'Diamonds', color: 'violet', art: '✦', poster: '/assets/mobile-legends-poster.jpg', desc: 'Official diamonds, delivered in minutes.' },
+  { id: 'bgmi', name: 'BGMI', short: 'BG', type: 'UC', color: 'orange', art: '◈', poster: '/assets/bgmi-poster.jpg', desc: 'Recharge UC securely with your player ID.' }
+];
+
+const packages = {
+  mlbb: [[86, 149], [172, 279], [257, 399], [344, 529], [514, 749], [706, 999]],
+  bgmi: [[60, 79], [300, 369], [600, 719], [1500, 1749], [3000, 3399], [6000, 6499]]
+};
+
+const app = document.querySelector('#app');
+let currentGame = 'mlbb';
+let selectedPackage = null;
+let wallet = 0;
+
+const icon = (name) => ({
+  shield: '◈',
+  bolt: 'ϟ',
+  clock: '◷',
+  arrow: '→',
+  search: '⌕',
+  check: '✓',
+  menu: '☰',
+  close: '×',
+  copy: '⧉',
+  user: '👤',
+  logout: '⎋'
+}[name] || '•');
+
+function showToast(message, type = 'info') {
+  let toastContainer = document.querySelector('.toast-container');
+  if (!toastContainer) {
+    toastContainer = document.createElement('div');
+    toastContainer.className = 'toast-container';
+    document.body.appendChild(toastContainer);
+  }
+  const toast = document.createElement('div');
+  toast.className = `toast-pill ${type}`;
+  toast.innerHTML = `<span class="toast-icon">${type === 'success' ? '✓' : type === 'error' ? '✕' : 'ℹ'}</span><span>${message}</span>`;
+  toastContainer.appendChild(toast);
+  setTimeout(() => toast.classList.add('show'), 10);
+  setTimeout(() => {
+    toast.classList.remove('show');
+    setTimeout(() => toast.remove(), 300);
+  }, 3500);
+}
+
+function openAuthModal(view = 'signin') {
+  authModalState = {
+    isOpen: true,
+    view,
+    emailInput: authModalState.emailInput || '',
+    error: '',
+    isSubmitting: false
+  };
+  userMenuOpen = false;
+  renderAuthModal();
+}
+
+function closeAuthModal() {
+  authModalState.isOpen = false;
+  renderAuthModal();
+  if (location.hash === '#signin' || location.hash === '#signup' || location.hash === '#forgot-password') {
+    history.replaceState(null, '', '#home');
+  }
+}
+
+window.openAuthModal = openAuthModal;
+window.closeAuthModal = closeAuthModal;
+
+window.toggleUserMenu = function (e) {
+  if (e) e.stopPropagation();
+  userMenuOpen = !userMenuOpen;
+  render();
+};
+
+window.performSignOut = function (e) {
+  if (e) e.stopPropagation();
+  const prevName = currentUser?.name || 'User';
+  currentUser = null;
+  userMenuOpen = false;
+  setStoredUser(null);
+  render();
+  showToast(`Signed out of ${prevName}`, 'info');
+};
+
+function header() {
+  const userActions = currentUser
+    ? `
+      <div class="user-profile-menu-wrap">
+        <button class="user-avatar-btn" id="userMenuBtn" onclick="window.toggleUserMenu(event)" aria-expanded="${userMenuOpen}" title="User Menu">
+          <span class="user-avatar-circle">${currentUser.name ? currentUser.name.charAt(0).toUpperCase() : 'U'}</span>
+          <span class="user-name-label">${currentUser.name.split(' ')[0]}</span>
+          <span class="user-dropdown-arrow">▾</span>
+        </button>
+        ${userMenuOpen ? `
+          <div class="user-dropdown-popover" id="userDropdown">
+            <div class="dropdown-header">
+              <div class="user-avatar-circle large">${currentUser.name ? currentUser.name.charAt(0).toUpperCase() : 'U'}</div>
+              <div class="dropdown-user-details">
+                <strong>${currentUser.name}</strong>
+                <small>${currentUser.email}</small>
+                ${currentUser.provider === 'google' ? '<span class="provider-badge">Google Account</span>' : ''}
+              </div>
+            </div>
+            <div class="dropdown-divider"></div>
+            <a href="#wallet" class="dropdown-item" id="dropdownWallet"><span class="item-icon">💳</span> Wallet Balance <strong class="dropdown-wallet-bal">₹${wallet.toFixed(2)}</strong></a>
+            <a href="#track" class="dropdown-item" id="dropdownOrders"><span class="item-icon">📦</span> My Orders</a>
+            <div class="dropdown-divider"></div>
+            <button class="dropdown-item logout-btn" id="signOutAction" onclick="window.performSignOut(event)">
+              <span class="item-icon">🚪</span> Sign Out
+            </button>
+          </div>
+        ` : ''}
+      </div>
+    `
+    : `<button class="signin-btn" id="signIn" onclick="window.openAuthModal('signin')">Sign In</button>`;
+
+  return `<header class="nav">
+    <a class="brand" href="#home" aria-label="NovaTop home">
+      <span class="brand-mark">N</span>
+      <span>NOVA<span>TOP</span></span>
+    </a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#games">Games</a>
+      <a href="#track">Orders</a>
+      <a href="#help">Help</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="wallet" id="walletButton" title="Wallet">₹${wallet.toFixed(2)}</button>
+      ${userActions}
+      <button class="mobile-menu" id="menuButton" aria-label="Open menu">${icon('menu')}</button>
+    </div>
+  </header>`;
+}
+
+function renderAuthModal() {
+  let modalEl = document.querySelector('#authModalRoot');
+  if (!modalEl) {
+    modalEl = document.createElement('div');
+    modalEl.id = 'authModalRoot';
+    document.body.appendChild(modalEl);
+  }
+
+  if (!authModalState.isOpen) {
+    modalEl.innerHTML = '';
+    return;
+  }
+
+  let contentHtml = '';
+
+  if (authModalState.view === 'google_chooser') {
+    contentHtml = `
+      <div class="google-dialog-card">
+        <div class="google-dialog-header">
+          <svg class="google-icon-svg" viewBox="0 0 24 24" width="22" height="22">
+            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+          </svg>
+          <span>Sign in with Google</span>
+        </div>
+        <div class="google-dialog-body">
+          <h2>Choose an account</h2>
+          <p class="google-dialog-sub">to continue to <strong>novatop.in</strong></p>
+
+          <div class="google-accounts-list">
+            <button class="google-account-row" id="googleSelectDefault">
+              <div class="google-user-avatar">
+                <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Ishan" alt="Avatar" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" />
+                <span class="avatar-fallback" style="display:none">IL</span>
+              </div>
+              <div class="google-account-text">
+                <span class="google-name">Ishan Luwang</span>
+                <span class="google-email">ishanluwang@gmail.com</span>
+              </div>
+            </button>
+
+            <button class="google-account-row another-account-row" id="googleUseAnother">
+              <div class="google-user-avatar default-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                </svg>
+              </div>
+              <div class="google-account-text">
+                <span class="google-name">Use another account</span>
+              </div>
+            </button>
+          </div>
+
+          <div id="customGoogleInputArea" class="custom-google-input-area" style="display: none;">
+            <label class="auth-label">Enter your Google Email
+              <input type="email" id="customGoogleEmail" placeholder="yourname@gmail.com" class="auth-input" />
+            </label>
+            <button class="btn primary full" id="submitCustomGoogle" style="margin-top: 10px;">Continue with this account</button>
+          </div>
+        </div>
+
+        <div class="google-dialog-footer">
+          <div class="google-lang-select">
+            <span>English (United Kingdom)</span>
+            <span class="dropdown-caret">▾</span>
+          </div>
+          <div class="google-footer-links">
+            <a href="#help" onclick="event.preventDefault()">Help</a>
+            <a href="#help" onclick="event.preventDefault()">Privacy</a>
+            <a href="#help" onclick="event.preventDefault()">Terms</a>
+          </div>
+        </div>
+      </div>
+    `;
+  } else if (authModalState.view === 'forgot') {
+    contentHtml = `
+      <div class="auth-card forgot-card">
+        <button class="auth-close-btn" id="authCloseBtn" onclick="window.closeAuthModal()" aria-label="Close">✕</button>
+        <div class="auth-header-block">
+          <h1 class="auth-title">Forgot password</h1>
+          <p class="auth-subtitle">Enter your email and we'll send you a link to reset your password.</p>
+        </div>
+
+        <form id="forgotPasswordForm" class="auth-form-inner">
+          ${authModalState.error ? `<div class="auth-error-banner">${authModalState.error}</div>` : ''}
+          <label class="auth-label">
+            Email
+            <input type="email" id="forgotEmail" class="auth-input" placeholder="you@example.com" value="${authModalState.emailInput || ''}" required autofocus />
+          </label>
+
+          <button type="submit" class="btn primary full forgot-submit-btn" id="sendResetLinkBtn" ${authModalState.isSubmitting ? 'disabled' : ''}>
+            ${authModalState.isSubmitting ? 'Sending link...' : 'Send reset link'}
+          </button>
+
+          <div class="auth-footer-links">
+            <button type="button" class="text-link-btn" id="backToLoginBtn" onclick="window.openAuthModal('signin')">Back to login</button>
+          </div>
+        </form>
+      </div>
+    `;
+  } else if (authModalState.view === 'forgot_success') {
+    contentHtml = `
+      <div class="auth-card forgot-card">
+        <button class="auth-close-btn" id="authCloseBtn" onclick="window.closeAuthModal()" aria-label="Close">✕</button>
+        <div class="auth-success-icon-wrap">✓</div>
+        <div class="auth-header-block">
+          <h1 class="auth-title">Check your email</h1>
+          <p class="auth-subtitle">We've sent a password reset link to <br><strong class="highlight-email">${authModalState.emailInput}</strong></p>
+        </div>
+        <div class="auth-success-actions">
+          <button type="button" class="btn primary full" id="backToLoginFromSuccessBtn" onclick="window.openAuthModal('signin')">Back to login</button>
+          <button type="button" class="text-link-btn resend-link-btn" id="resendResetBtn">Didn't receive email? Resend</button>
+        </div>
+      </div>
+    `;
+  } else if (authModalState.view === 'signup') {
+    contentHtml = `
+      <div class="auth-card">
+        <button class="auth-close-btn" id="authCloseBtn" onclick="window.closeAuthModal()" aria-label="Close">✕</button>
+        <div class="auth-header-block">
+          <h1 class="auth-title">Create an account</h1>
+          <p class="auth-subtitle">Join NovaTop for fast top-ups and order tracking</p>
+        </div>
+
+        <div class="auth-social-area">
+          <button class="google-auth-btn" id="googleAuthTriggerBtn" type="button" onclick="window.openAuthModal('google_chooser')">
+            <svg class="google-icon-svg" viewBox="0 0 24 24" width="18" height="18">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+            </svg>
+            <span>Continue with Google</span>
+          </button>
+        </div>
+
+        <div class="auth-divider"><span>or with email</span></div>
+
+        <form id="signupForm" class="auth-form-inner">
+          ${authModalState.error ? `<div class="auth-error-banner">${authModalState.error}</div>` : ''}
+          <label class="auth-label">
+            Full Name
+            <input type="text" id="signupName" class="auth-input" placeholder="e.g. Ishan Luwang" required />
+          </label>
+          <label class="auth-label">
+            Email
+            <input type="email" id="signupEmail" class="auth-input" placeholder="you@example.com" required />
+          </label>
+          <label class="auth-label">
+            Password
+            <input type="password" id="signupPassword" class="auth-input" placeholder="••••••••" minlength="6" required />
+          </label>
+
+          <button type="submit" class="btn primary full" ${authModalState.isSubmitting ? 'disabled' : ''}>
+            ${authModalState.isSubmitting ? 'Creating account...' : 'Create account'}
+          </button>
+        </form>
+
+        <div class="auth-footer-toggle">
+          <span>Already have an account?</span>
+          <button type="button" class="text-link-btn" id="switchToSigninBtn" onclick="window.openAuthModal('signin')">Sign in</button>
+        </div>
+      </div>
+    `;
+  } else {
+    // Standard Sign In view
+    contentHtml = `
+      <div class="auth-card">
+        <button class="auth-close-btn" id="authCloseBtn" onclick="window.closeAuthModal()" aria-label="Close">✕</button>
+        <div class="auth-header-block">
+          <h1 class="auth-title">Welcome back</h1>
+          <p class="auth-subtitle">Sign in to manage your orders & top-up history</p>
+        </div>
+
+        <div class="auth-social-area">
+          <button class="google-auth-btn" id="googleAuthTriggerBtn" type="button" onclick="window.openAuthModal('google_chooser')">
+            <svg class="google-icon-svg" viewBox="0 0 24 24" width="18" height="18">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+            </svg>
+            <span>Sign in with Google</span>
+          </button>
+        </div>
+
+        <div class="auth-divider"><span>or sign in with email</span></div>
+
+        <form id="signinForm" class="auth-form-inner">
+          ${authModalState.error ? `<div class="auth-error-banner">${authModalState.error}</div>` : ''}
+          <label class="auth-label">
+            Email
+            <input type="email" id="signinEmail" class="auth-input" placeholder="you@example.com" value="${authModalState.emailInput || ''}" required autofocus />
+          </label>
+          <div class="auth-password-label-row">
+            <label class="auth-label full-width">
+              <span class="auth-label-row-text">
+                <span>Password</span>
+                <button type="button" class="forgot-link-btn" id="forgotPasswordTrigger" onclick="window.openAuthModal('forgot')">Forgot password?</button>
+              </span>
+              <input type="password" id="signinPassword" class="auth-input" placeholder="••••••••" required />
+            </label>
+          </div>
+
+          <button type="submit" class="btn primary full" ${authModalState.isSubmitting ? 'disabled' : ''}>
+            ${authModalState.isSubmitting ? 'Signing in...' : 'Sign in'}
+          </button>
+        </form>
+
+        <div class="auth-footer-toggle">
+          <span>Don't have an account?</span>
+          <button type="button" class="text-link-btn" id="switchToSignupBtn" onclick="window.openAuthModal('signup')">Sign up</button>
+        </div>
+      </div>
+    `;
+  }
+
+  modalEl.innerHTML = `
+    <div class="auth-modal-backdrop" id="authBackdrop">
+      <div class="auth-modal-dialog-wrapper">
+        ${contentHtml}
+      </div>
+    </div>
+  `;
+
+  bindAuthModalEvents();
+}
+
+function bindAuthModalEvents() {
+  const backdrop = document.querySelector('#authBackdrop');
+  backdrop?.addEventListener('click', (e) => {
+    if (e.target === backdrop) closeAuthModal();
+  });
+
+  document.querySelector('#authCloseBtn')?.addEventListener('click', closeAuthModal);
+
+  document.querySelector('#googleSelectDefault')?.addEventListener('click', () => {
+    currentUser = {
+      name: 'Ishan Luwang',
+      email: 'ishanluwang@gmail.com',
+      avatar: 'https://api.dicebear.com/7.x/bottts/svg?seed=Ishan',
+      provider: 'google'
+    };
+    setStoredUser(currentUser);
+    closeAuthModal();
+    render();
+    showToast(`Signed in as ${currentUser.name}`, 'success');
+  });
+
+  document.querySelector('#googleUseAnother')?.addEventListener('click', () => {
+    const inputArea = document.querySelector('#customGoogleInputArea');
+    if (inputArea) {
+      inputArea.style.display = inputArea.style.display === 'none' ? 'block' : 'none';
+      document.querySelector('#customGoogleEmail')?.focus();
+    }
+  });
+
+  document.querySelector('#submitCustomGoogle')?.addEventListener('click', () => {
+    const email = document.querySelector('#customGoogleEmail')?.value.trim();
+    if (!email || !email.includes('@')) {
+      alert('Please enter a valid Google email address.');
+      return;
+    }
+    const namePart = email.split('@')[0];
+    const formattedName = namePart.charAt(0).toUpperCase() + namePart.slice(1);
+    currentUser = {
+      name: formattedName,
+      email: email,
+      avatar: `https://api.dicebear.com/7.x/bottts/svg?seed=${encodeURIComponent(email)}`,
+      provider: 'google'
+    };
+    setStoredUser(currentUser);
+    closeAuthModal();
+    render();
+    showToast(`Signed in as ${currentUser.name}`, 'success');
+  });
+
+  document.querySelector('#resendResetBtn')?.addEventListener('click', () => {
+    showToast(`Reset link resent to ${authModalState.emailInput}`, 'success');
+  });
+
+  // Form submits
+  document.querySelector('#signinForm')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = document.querySelector('#signinEmail')?.value.trim();
+    const password = document.querySelector('#signinPassword')?.value;
+
+    if (!email || !password) return;
+
+    authModalState.isSubmitting = true;
+    renderAuthModal();
+
+    setTimeout(() => {
+      const namePart = email.split('@')[0];
+      const displayName = namePart.charAt(0).toUpperCase() + namePart.slice(1);
+      currentUser = {
+        name: displayName,
+        email: email,
+        avatar: `https://api.dicebear.com/7.x/bottts/svg?seed=${encodeURIComponent(email)}`,
+        provider: 'email'
+      };
+      setStoredUser(currentUser);
+      closeAuthModal();
+      render();
+      showToast(`Welcome back, ${currentUser.name}!`, 'success');
+    }, 600);
+  });
+
+  document.querySelector('#signupForm')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.querySelector('#signupName')?.value.trim();
+    const email = document.querySelector('#signupEmail')?.value.trim();
+    const password = document.querySelector('#signupPassword')?.value;
+
+    if (!name || !email || !password) return;
+
+    authModalState.isSubmitting = true;
+    renderAuthModal();
+
+    setTimeout(() => {
+      currentUser = {
+        name: name,
+        email: email,
+        avatar: `https://api.dicebear.com/7.x/bottts/svg?seed=${encodeURIComponent(email)}`,
+        provider: 'email'
+      };
+      setStoredUser(currentUser);
+      closeAuthModal();
+      render();
+      showToast(`Account created! Welcome, ${currentUser.name}`, 'success');
+    }, 600);
+  });
+
+  document.querySelector('#forgotPasswordForm')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = document.querySelector('#forgotEmail')?.value.trim();
+    if (!email) return;
+
+    authModalState.isSubmitting = true;
+    authModalState.emailInput = email;
+    renderAuthModal();
+
+    setTimeout(() => {
+      authModalState.isSubmitting = false;
+      authModalState.view = 'forgot_success';
+      renderAuthModal();
+    }, 700);
+  });
+}
+
+function footer() {
+  return `<footer>
+    <div class="footer-grid">
+      <div class="footer-brand-col">
+        <a class="brand" href="#home">
+          <span class="brand-mark">N</span>
+          <span>NOVA<span>TOP</span></span>
+        </a>
+        <p>NovaTop is your one-stop destination for instant game top-ups. Access your favourite games anytime, anywhere, with secure payments and instant delivery.</p>
+      </div>
+      <div>
+        <h4>HOT GAMES</h4>
+        <a href="#topup/bgmi" class="footer-game-link"><span class="tiny-game-badge">🎮</span> BGMI</a>
+        <a href="#topup/bgmi" class="footer-game-link"><span class="tiny-game-badge">⚡</span> BGMI PROMO</a>
+        <a href="#topup/mlbb" class="footer-game-link"><span class="tiny-game-badge">⚔️</span> Call of Duty Mobile</a>
+        <a href="#topup/mlbb" class="footer-game-link"><span class="tiny-game-badge">✨</span> GENSHIN IMPACT</a>
+      </div>
+      <div>
+        <h4>USEFUL LINKS</h4>
+        <a href="#help">About Us</a>
+        <a href="#help">Privacy Policy</a>
+        <a href="#help">Terms & Conditions</a>
+        <a href="#help">Help Center</a>
+        <a href="#help">General FAQs</a>
+      </div>
+      <div>
+        <h4>CONTACT</h4>
+        <a href="mailto:support@novatop.in" class="footer-contact-item"><span>✉</span> support@novatop.in</a>
+        <p class="footer-contact-item"><span>📍</span> Manipur, India</p>
+        <div class="social-links-row">
+          <span class="social-circle" title="Instagram">📷</span>
+          <span class="social-circle" title="YouTube">▶</span>
+          <span class="social-circle" title="Telegram">✈</span>
+          <span class="social-circle" title="WhatsApp">💬</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="copyright">© 2026 NovaTop — All Rights Reserved 🎮</div>
+      <button class="live-chat-floating-btn" id="liveChatBtn" onclick="alert('Support chat is online. How can we help you today?')">
+        <span class="chat-icon">🎧</span> 24/7 Chat
+      </button>
+    </div>
+  </footer>`;
+}
+
+function home() {
+  return `<main>
+    <section class="hero hero-v2">
+      <div class="hero-copy">
+        <div class="hero-kicker"><span class="live-dot"></span> INDIA'S GAME TOP-UP HUB</div>
+        <h1>Less waiting.<br><em>More playing.</em></h1>
+        <p class="hero-text">Recharge Mobile Legends diamonds and BGMI UC with a fast, straightforward checkout built around your player ID.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#games">Choose a game ${icon('arrow')}</a>
+          <a class="btn ghost" href="#track">Track order</a>
+        </div>
+        <div class="trust-row">
+          <span>${icon('bolt')} Fast checkout</span>
+          <span>${icon('shield')} Secure by design</span>
+          <span>${icon('check')} Clear pricing</span>
+        </div>
+      </div>
+      <div class="hero-games">
+        <a href="#topup/mlbb" class="hero-game ml">
+          <img src="/assets/mobile-legends-poster.jpg" alt="Mobile Legends" />
+          <div>
+            <small>MOBILE LEGENDS</small>
+            <b>Diamond top-up</b>
+            <span>Top up now ${icon('arrow')}</span>
+          </div>
+        </a>
+        <a href="#topup/bgmi" class="hero-game bg">
+          <img src="/assets/bgmi-poster.jpg" alt="BGMI" />
+          <div>
+            <small>BATTLEGROUNDS MOBILE INDIA</small>
+            <b>UC recharge</b>
+            <span>Top up now ${icon('arrow')}</span>
+          </div>
+        </a>
+        <div class="assured-badge">
+          <strong>24/7</strong>
+          <span>Order<br>tracking</span>
+        </div>
+      </div>
+    </section>
+    <section class="benefit-bar">
+      <span><i>${icon('bolt')}</i><b>Simple checkout</b><small>Player ID only</small></span>
+      <span><i>${icon('shield')}</i><b>Safe & transparent</b><small>No hidden charges</small></span>
+      <span><i>${icon('clock')}</i><b>Stay updated</b><small>Track every order</small></span>
+    </section>
+    <section id="games" class="section game-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PICK YOUR GAME</p>
+          <h2>Ready when you are.</h2>
+          <p class="section-sub">Select a game to see available packs and complete your top-up.</p>
+        </div>
+      </div>
+      <div class="game-grid">${games.map(gameCard).join('')}</div>
+    </section>
+    <section class="how section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A BETTER WAY TO TOP UP</p>
+          <h2>Three quick steps.</h2>
+        </div>
+      </div>
+      <div class="steps">
+        <article><b>01</b><span class="step-icon">⌨</span><h3>Enter player details</h3><p>Add your in-game ID. For Mobile Legends, include your Zone ID too.</p></article>
+        <article><b>02</b><span class="step-icon">◫</span><h3>Choose your pack</h3><p>Pick exactly the amount of diamonds or UC you want.</p></article>
+        <article><b>03</b><span class="step-icon">${icon('bolt')}</span><h3>Follow your order</h3><p>Get a confirmation and keep an eye on your delivery status.</p></article>
+      </div>
+    </section>
+    <section class="banner">
+      <div>
+        <p class="eyebrow">NO GUESSWORK, JUST GAME TIME</p>
+        <h2>Choose your game and power up.</h2>
+      </div>
+      <a class="btn primary" href="#topup/mlbb">Start top-up ${icon('arrow')}</a>
+    </section>
+  </main>`;
+}
+
+function poster(g) { return g.poster ? `<img src="${g.poster}" alt="${g.name} game poster" />` : `<span>${g.art}</span>`; }
+function gameCard(g) { return `<a href="#topup/${g.id}" class="game-card ${g.color}" data-game="${g.name.toLowerCase()}"><div class="game-art">${poster(g)}<small>${g.short}</small></div><div class="game-info"><h3>${g.name}</h3><p>${g.type} top-up</p></div><span class="card-arrow">${icon('arrow')}</span></a>`; }
+
+function topup(id) {
+  const g = games.find(x => x.id === id) || games[0]; currentGame = packages[id] ? id : 'mlbb';
+  const isMl = currentGame === 'mlbb';
+  return `<main class="topup-page">
+    <div class="crumb"><a href="#home">Home</a><span>/</span><a href="#games">Games</a><span>/</span>${g.name}</div>
+    <section class="product-head">
+      <div class="game-art large ${g.color}">${poster(g)}<small>${g.short}</small></div>
+      <div>
+        <p class="eyebrow">${g.type.toUpperCase()} TOP-UP</p>
+        <h1>${g.name}</h1>
+        <p>${g.desc}</p>
+      </div>
+    </section>
+    <div class="assurances">
+      <span>${icon('check')} Player ID checkout</span>
+      <span>${icon('check')} Secure payment</span>
+      <span>${icon('check')} Live order tracking</span>
+    </div>
+    <section class="checkout">
+      <div class="checkout-main">
+        <div class="form-step"><span>1</span><div><h2>Account details</h2><p>Enter the player details exactly as shown in game.</p></div></div>
+        <div class="form-grid">
+          <label>Player ID<input id="playerId" placeholder="Enter your player ID" inputmode="numeric" /></label>
+          ${isMl ? '<label>Zone ID<input id="zoneId" placeholder="Enter zone ID" inputmode="numeric" /></label>' : ''}
+        </div>
+        <button id="verifyPlayer" class="verify">Verify player ${icon('arrow')}</button>
+        <p class="verified" id="verifiedName"></p>
+        <div class="form-step pack-heading"><span>2</span><div><h2>Choose your pack</h2><p>Select one option to continue.</p></div></div>
+        <div class="pack-grid">${packages[currentGame].map(([amount, price], i) => `<button class="pack ${i === 1 ? 'popular' : ''}" data-amount="${amount}" data-price="${price}">${i === 1 ? '<i>MOST POPULAR</i>' : ''}<b>${amount} ${g.type}</b><strong>₹${price}</strong></button>`).join('')}</div>
+      </div>
+      <aside class="order-card">
+        <p class="eyebrow">ORDER SUMMARY</p>
+        <div class="summary-game">
+          <div class="tiny-art ${g.color}">${g.art}</div>
+          <div><b>${g.name}</b><span id="summaryPack">Select a pack</span></div>
+        </div>
+        <div class="summary-line"><span>Pack price</span><strong id="summaryPrice">—</strong></div>
+        <div class="summary-line total"><span>Total</span><strong id="summaryTotal">—</strong></div>
+        <button id="continuePayment" class="btn primary full" disabled>Continue to payment ${icon('arrow')}</button>
+        <p class="summary-note">${icon('shield')} Secure demo checkout</p>
+      </aside>
+    </section>
+  </main>`;
+}
+
+function track() {
+  return `<main class="center-page">
+    <section class="track-card">
+      <p class="eyebrow">ORDER LOOKUP</p>
+      <h1>Where’s your top-up?</h1>
+      <p>Enter your order number to see its current delivery status.</p>
+      <label>Order number<input id="orderNumber" placeholder="e.g. NT-2026-48219" /></label>
+      <button id="trackOrder" class="btn primary full">Track order ${icon('arrow')}</button>
+      <div id="trackingResult"></div>
+    </section>
+  </main>`;
+}
+
+function help() {
+  return `<main class="center-page help-page">
+    <section>
+      <p class="eyebrow">WE’RE HERE TO HELP</p>
+      <h1>Support, without the wait.</h1>
+      <div class="faq">${[['How long does a top-up take?', 'Most orders are confirmed within a few minutes. You can follow its progress with your order number.'], ['What if I enter the wrong player ID?', 'Orders are sent to the player details you provide, so please check them before payment.'], ['Can I get a refund?', 'This demo does not process payments. A live service should publish a clear refund policy.'], ['How can I contact support?', 'Use the form below and our friendly team will get back to you.']].map(([q, a]) => `<details><summary>${q}<span>+</span></summary><p>${a}</p></details>`).join('')}</div>
+      <form id="contactForm" class="contact-form">
+        <h2>Still need a hand?</h2>
+        <div class="form-grid"><label>Name<input required placeholder="Your name" /></label><label>Email<input type="email" required placeholder="you@example.com" /></label></div>
+        <label>How can we help?<textarea required placeholder="Include your order number if you have one."></textarea></label>
+        <button class="btn primary">Send message ${icon('arrow')}</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+  </main>`;
+}
+
+function walletPage() {
+  return `<main class="center-page">
+    <section class="wallet-card">
+      <p class="eyebrow">NOVA WALLET</p>
+      <h1>₹${wallet.toFixed(2)}</h1>
+      <p>Your demo wallet balance</p>
+      <div class="amounts">${[100, 500, 1000, 2000].map(n => `<button data-add="${n}">+ ₹${n}</button>`).join('')}</div>
+      <label>Or enter an amount<input id="customAmount" inputmode="numeric" placeholder="0" /></label>
+      <button id="addBalance" class="btn primary full">Add demo balance ${icon('arrow')}</button>
+      <div class="notice">${icon('shield')} This is a front-end demo. No money is collected or stored.</div>
+    </section>
+  </main>`;
+}
+
+function render() {
+  const route = location.hash.slice(1) || 'home';
+  if (route === 'signin' || route === 'signup' || route === 'forgot-password') {
+    openAuthModal(route === 'forgot-password' ? 'forgot' : route);
+  }
+  let content = route.startsWith('topup/') ? topup(route.split('/')[1]) : ({ home, games: home, track, help, wallet: walletPage, signin: home, signup: home, 'forgot-password': home }[route] || home)();
+  app.innerHTML = header() + content + footer();
+  bind();
+  if (route === 'games') requestAnimationFrame(() => document.querySelector('#games')?.scrollIntoView());
+  else window.scrollTo({ top: 0, behavior: 'instant' });
+}
+
+function bind() {
+  document.querySelector('#walletButton')?.addEventListener('click', () => location.hash = 'wallet');
+
+  // Close dropdown on outside click
+  window.addEventListener('click', (e) => {
+    if (userMenuOpen && !e.target.closest('.user-profile-menu-wrap')) {
+      userMenuOpen = false;
+      render();
+    }
+  }, { once: true });
+
+  document.querySelector('#menuButton')?.addEventListener('click', () => document.querySelector('nav').classList.toggle('open'));
+  document.querySelector('#gameSearch')?.addEventListener('input', e => document.querySelectorAll('.game-card').forEach(c => c.hidden = !c.dataset.game.includes(e.target.value.toLowerCase())));
+  document.querySelector('#verifyPlayer')?.addEventListener('click', () => { const id = document.querySelector('#playerId').value.trim(); document.querySelector('#verifiedName').textContent = id ? `${icon('check')} Player details verified — ShadowRider` : 'Enter a player ID to verify.'; });
+  document.querySelectorAll('.pack').forEach(btn => btn.addEventListener('click', () => { document.querySelectorAll('.pack').forEach(x => x.classList.remove('selected')); btn.classList.add('selected'); selectedPackage = btn.dataset; document.querySelector('#summaryPack').textContent = `${selectedPackage.amount} ${games.find(g => g.id === currentGame).type}`; document.querySelector('#summaryPrice').textContent = `₹${selectedPackage.price}`; document.querySelector('#summaryTotal').textContent = `₹${selectedPackage.price}`; document.querySelector('#continuePayment').disabled = false; }));
+  document.querySelector('#continuePayment')?.addEventListener('click', () => { const player = document.querySelector('#playerId').value.trim(); if (!player) { document.querySelector('#playerId').focus(); return; } alert(`Demo order created for ${selectedPackage.amount} ${games.find(g => g.id === currentGame).type}. No payment will be taken.`); location.hash = 'track'; });
+  document.querySelector('#trackOrder')?.addEventListener('click', () => { const code = document.querySelector('#orderNumber').value.trim(); document.querySelector('#trackingResult').innerHTML = code ? `<div class="tracking"><span>${icon('check')}</span><div><b>Order found</b><p>Payment pending · We’ll begin processing after payment confirmation.</p></div></div>` : '<p class="error">Please enter an order number.</p>'; });
+  document.querySelector('#contactForm')?.addEventListener('submit', e => { e.preventDefault(); document.querySelector('#formMessage').textContent = 'Thanks — your demo support request has been recorded.'; e.target.reset(); });
+  document.querySelectorAll('[data-add]').forEach(b => b.addEventListener('click', () => { document.querySelector('#customAmount').value = b.dataset.add; }));
+  document.querySelector('#addBalance')?.addEventListener('click', () => { const n = Number(document.querySelector('#customAmount').value); if (n > 0) { wallet += n; render(); } });
+}
+
+// Global escape key to close modals
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && authModalState.isOpen) {
+    closeAuthModal();
+  }
+});
+
+window.addEventListener('hashchange', render);
+render();
+
+    </script>
   </body>
 </html>
-
-
-
